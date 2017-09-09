@@ -6,7 +6,7 @@ Hashicorp's Vault - Encryption As A Service Demo
 Run the below command to launch Vault server in development mode:
 
 ```bash
-docker run --name=pravsingh-vault --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=pravsingh-vault' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:8200' -p 8200:8200 vault
+docker run --name=pravsingh-vault --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=pravsingh-vault-token' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:8200' -p 8200:8200 vault
 ```
 
 In above terminal, the server will spit out the VAULT_ADDR and "Unseal Key" and "Root Token".
@@ -25,7 +25,7 @@ The above will start a command prompt. Execute following on the prompt:
 
 ```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
-echo "pravsingh-vault" > ~/.vault-token 
+echo "pravsingh-vault-token" > ~/.vault-token 
 ```
 
 # enable Transit backend for Encryption service
