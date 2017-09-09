@@ -25,7 +25,7 @@ The above will start a command prompt. Execute following on the prompt:
 
 ```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
-echo "upgrade-vault" > ~/.vault-token 
+echo "pravsingh-vault" > ~/.vault-token 
 ```
 
 # enable Transit backend for Encryption service
