@@ -11,7 +11,7 @@ docker run --name=pravsingh-vault --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID
 
 In above terminal, the server will spit out the VAULT_ADDR and "Unseal Key" and "Root Token".
 Note them down as they might be useful for advanced features.
-However for us, we have fixed the token to 'pravsingh-vault' which server will use to initialize, the same will be used in following steps. In case you don't provide VAULT_DEV_ROOT_TOKEN_ID variable, the Vault generates random UUID as Root Token for us.
+However for us, we have fixed the token to 'pravsingh-vault-token' which server will use to initialize, the same will be used in following steps. In case you don't provide VAULT_DEV_ROOT_TOKEN_ID variable, the Vault generates random UUID as Root Token for us.
 
 # Setting up the Client
 We can invoke Vault commands from our machine/laptop or from inside the above docker container.
