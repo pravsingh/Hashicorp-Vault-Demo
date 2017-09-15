@@ -34,9 +34,6 @@ echo "pravsingh-vault-token" > ~/.vault-token
 vault mount transit
 ```
 
-# vault on minikube
-refer https://github.com/pravsingh/vault-demo/wiki/Setup
-
 # setup named encryption key
 
 ```bash
@@ -75,3 +72,7 @@ If so the demo is successful!
 
 
 congratulations!
+
+
+# vault on minikube
+refer https://github.com/pravsingh/vault-demo/wiki/Setup
